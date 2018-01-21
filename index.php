@@ -2,6 +2,7 @@
 <head>
 	<title>StreamMusic</title>
 	<link href="style.css" rel="stylesheet" type="text/css"/>
+	<meta charset="UTF-8">
 </head>
 <body>
 	<div class="container">  
