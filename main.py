@@ -72,4 +72,8 @@ def ejecutar():
 
 
 if __name__ == "__main__":
-    print ejecutar()
+    try:
+        print ejecutar()
+    except Exception as e:
+        with open('./log', "wb") as f:
+            f.write(str(e))
