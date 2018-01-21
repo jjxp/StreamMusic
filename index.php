@@ -9,7 +9,7 @@
 	  <form id="contact" action="addsong.php" method="post">
 		<h3>Nueva lista</h3>
 		<h4>StreamMusic</h4>
-		<textarea placeholder="Escribe aquí las canciones que quieras, una por línea." name="songs" cols="40" rows="5" required autofocus></textarea>
+		<textarea placeholder="Escribe aquí las canciones que quieras, una por línea." name="songs" id="songs" cols="40" rows="5" required autofocus></textarea>
 		
 		<button name="submit" type="submit" id="contact-submit" data-submit="Procesando...">Aceptar</button>
 		</fieldset>

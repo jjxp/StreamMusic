@@ -1,16 +1,13 @@
 <?php
 
-$title	=	$_POST["title"];
-$artist	=	$_POST["artist"];
-$album	=	$_POST["album"];
-$url	=	$_POST["url"];
+$songs	=	$_POST["songs"];
 
-$script = 'python main.py "'.$title.'" "'.$artist.'" "'.$album.'" "'.$url.'"';
+$script = 'python2.7 main.py "' . $songs . '"';
 
 session_start();
 
 $_SESSION["output"] = exec($script);
 
-header('Location: new.php');
+header('Location: index.php?playlistId=' . $_SESSION["output"]);
 
 ?>
